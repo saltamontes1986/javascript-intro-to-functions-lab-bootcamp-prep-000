@@ -14,8 +14,11 @@ describe('whisper(string)', function() {
     expect(whisper('HELLO')).toEqual('hello')
   })
 })
-function logShout(string) {
-  return string.toUpperCase()
+function logShout(string){
+  return console.log(string.toUpperCase())
+}
+
+logShout("hello")
 }
 describe('logShout(string)', function() {
   it('calls console.log() its one argument in all caps', function() {
